@@ -6,4 +6,10 @@
 <lastmod>2017-06-20</lastmod>
 <changefreq>weekly</changefreq>
 </url>
+<url>
+<loc>http://ees.lanl.gov/monty</loc>
+<priority>0.8</priority>
+<lastmod>2017-06-20</lastmod>
+<changefreq>weekly</changefreq>
+</url>
 </urlset>
