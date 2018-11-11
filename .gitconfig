@@ -9,11 +9,14 @@
 	url = git@gitlab.com:monty/monty.gitlab.io.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
-	remote = gh
+	remote = origin
 	merge = refs/heads/master
 [remote "gl"]
-	url = git@gitlab.com:monty/www-monty.git
+	url = git@gitlab.com:monty/monty.gitlab.io.git
 	fetch = +refs/heads/*:refs/remotes/gl/*
 [remote "gh"]
 	url = git@github.com:montyvesselinov/montyvesselinov.github.io.git
+	fetch = +refs/heads/*:refs/remotes/gh/*
+[remote "gh2"]
+	url = git@github.com:montyv/montyv.github.io.git
 	fetch = +refs/heads/*:refs/remotes/gh/*
