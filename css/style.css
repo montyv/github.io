@@ -26,3 +26,7 @@ header, main, footer {
 ul.browser-default li {
 	list-style-type: initial;
 }
+
+a{
+	color: #e65100 !important;
+}
