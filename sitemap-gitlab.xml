@@ -11,6 +11,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://monty.gitlab.io/papers/Telfeyan%20et%20al%202018%20Long-term%20stability%20of%20dithionite%20in%20alkaline%20anaerobic%20aqueous%20solution.pdf</loc>
+  <lastmod>2018-12-14T18:18:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://monty.gitlab.io/papers/Vesselinov%20et%20al%202018%20Unsupervised%20Machine%20Learning%20Based%20on%20Non-Negative%20Tensor%20Factorization%20for%20Analyzing%20Reactive-Mixing.pdf</loc>
   <lastmod>2018-12-14T18:18:21+00:00</lastmod>
   <priority>0.80</priority>
