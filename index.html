@@ -18,6 +18,8 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.0.0.js"></script>
 	<script src="js/materialize.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="js/mathjaxhelper.js"></script>
 	<script src="js/init.js"></script>
 <body>
 
@@ -28,9 +30,8 @@
 			<ul class="right hide-on-med-and-down bold">
 				<li><a href="#information">Information</a></li>
 				<li><a href="#research">Research</a></li>
-				<li><a href="#examples">Examples</a></li>
-				<li><a href="#projects">Projects</a></li>
 				<li><a href="#coodes">Codes</a></li>
+				<li><a href="#projects">Projects</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons orange-text">menu</i></a>
 		</div>
@@ -51,9 +52,8 @@
 		</li>
 		<li><a href="#information">Information</a></li>
 		<li><a href="#research">Research</a></li>
-		<li><a href="#examples">Examples</a></li>
-		<li><a href="#projects">Projects</a></li>
 		<li><a href="#codes">Codes</a></li>
+		<li><a href="#projects">Projects</a></li>
 	</ul>
 
 <div id="monty" class="pagecontent">
@@ -79,6 +79,11 @@
 					<br />
 					Web: <a href="https://monty.gitlab.io" target="_blank">monty.gitlab.io</a>
 					<br />
+					LinkedIN: <a href="https://www.linkedin.com/in/montyvesselinov/" target="_blank">montyvesselinov</a>
+					<br />
+					GitLab: <a href="https://gitlab.com/monty" target="_blank">monty</a>
+					<br />
+					GitHub: <a href="https://github.com/montyvesselinov" target="_blank">montyvesselinov</a>
 					</td>
 					<td width="*"><img src="images/monty-mug-small.jpg" alt="monty" width="100" height="215" border="0" align="left" /></td>
 				</tr>
@@ -192,26 +197,6 @@
 							</div>
 						</div>
 					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="parallax-container" style="height: 100px;">
-	<div class="section no-pad-bot">
-		<div class="row center">
-		</div>
-	</div>
-	<div class="parallax"><img src="backgrounds/steel.jpg" alt=""></div>
-</div>
-
-<div id="research" class="container scrollspy">
-	<div class="section">
-		<div class="row">
-			<div class="col s12 center">
-				<h4>Research</h4>
-				<ul class="collapsible" data-collapsible="accordion">
 					<li>
 						<div class="collapsible-header">Publications</div>
 						<div class="collapsible-body">
@@ -413,6 +398,7 @@
 						<div class="collapsible-header">Presentations</div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
+								<p>Presentations are also available at <a href="https://www.slideshare.net/VelimirmontyVesselin">slideshare.net</a></p>
 								<ul class="browser-default" style="padding-left: 0px;">
 									<li>
 										Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models, AGU Fall meeting, Washington D.C., 2018. <a href="presentations/Vesselinov 2018 Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models LA-UR-18-31366.pdf" target="_blank">PDF</a>
@@ -503,19 +489,40 @@
 						</div>
 					</li>
 					<li>
+						<div class="collapsible-header">Videos</div>
+						<div class="collapsible-body">
+							<div class="left-align" style="padding-left: 30px;">
+								<ul class="browser-default" style="padding-left: 0px;">
+									<li>
+										Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models, Recent Advances in Machine Learning and Computational Methods for Geoscience, Institute for Mathematics and its Applications, University of Minnesota, 2018. <a href="https://youtu.be/xPOkeLMJywE" target="_blank">Video</a>
+									</li>
+									<video class="responsive-video" controls>
+										<source src="https://youtu.be/xPOkeLMJywE" type="video/mp4">
+									</video>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
 						<div class="collapsible-header">Reports</div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
 								<ul class="browser-default" style="padding-left: 0px;">
-									<li>Fate and Transport Investigations Update for Chromium Contamination from Sandia Canyon, LA-UR-08-4702, 2008. <a href="reports/LA-UR-08-4702-Fate&amp;Trans_Cr_Sandia_Jul08.pdf" target="_blank">PDF</a></li>
-									<li>Pajarito Canyon Investigation Report, LA-UR-08-5852, 2008. <a href="reports/LA-UR-08-5852-Paj_Cyn_IR.pdf" target="_blank">PDF</a></li>
-									<li>Decision analysis for addressing  groundwater contaminants from the radioactive liquid waste treatment facility  released into Mortandad canyon, LA-UR-05-6397, 2005. <a href="reports/LA-UR-05-6397 Decision Analysis-GWContaminants020106.pdf" target="_blank">PDF</a></li>
+									<li>
+										Fate and Transport Investigations Update for Chromium Contamination from Sandia Canyon, LA-UR-08-4702, 2008. <a href="reports/LA-UR-08-4702-Fate&amp;Trans_Cr_Sandia_Jul08.pdf" target="_blank">PDF</a>
+									</li>
+									<li>
+										Pajarito Canyon Investigation Report, LA-UR-08-5852, 2008. <a href="reports/LA-UR-08-5852-Paj_Cyn_IR.pdf" target="_blank">PDF</a>
+									</li>
+									<li>
+										Decision analysis for addressing  groundwater contaminants from the radioactive liquid waste treatment facility  released into Mortandad canyon, LA-UR-05-6397, 2005. <a href="reports/LA-UR-05-6397 Decision Analysis-GWContaminants020106.pdf" target="_blank">PDF</a>
+									</li>
 								</ul>
 							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -528,20 +535,91 @@
 	<div class="parallax"><img src="backgrounds/steel.jpg" alt=""></div>
 </div>
 
-<div id="examples" class="container scrollspy">
+<div id="research" class="container scrollspy">
 	<div class="section">
 		<div class="row">
 			<div class="col s12 center">
-				<h4>Examples</h4>
+				<h4>Research</h4>
 				<ul class="collapsible" data-collapsible="accordion">
 					<li>
 						<div class="collapsible-header">Machine Learning</div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
-								<p>
-									<img class="materialboxed" src="logos/ntfk-logo.png" width="80%" align="middle" />
-									<img class="materialboxed" src="logos/nmfk-logo.png" width="80%" align="middle" />
-								</p>
+								<p>Unsupervised Machine Learning methods are powerful data-analytics tools capable of extracting important features hidden (latent) in large datasets without any prior information.
+								The physical interpretation of the extracted features is done <em>a posteriori</em> by subject-matter experts.</p>
+								<p>In contrast, supervised Machine Learning methods are trained based on large labeled datasets
+								The labeling is performed <em>a priori</em> by subject-matter experts.
+								The process of deep Machine Learning commonly includes both unsupervised and supervised techniques <a href="https://www.nature.com/articles/nature14539">LeCun, Bengio, and Hinton 2015</a> where unsupervised Machine Learning are applied to facilitate the process of data labeling.</p>
+								<p>The integration of large datasets, powerful computational capabilities, and affordable data storage has resulted in the widespread use of Machine Learning in science, technology, and industry.</p>
+								<p>Recently we have developed a novel unsupervised Machine Learning methods.
+								The methods are based on Matrix/Tensor Decomposition (Factorization) coupled with sparsity and nonnegativity constraints.
+								The method reveals the temporal and spatial footprints of the extracted features.</p>
+
+								<h3 id="tensor-decomposition">Tensor Decomposition</h3>
+								<p>A novel unsupervised Machine Learning based on Tensor Decomposition coupled with sparsity and nonnegativity constraints has been applied to extract the temporal and spatial footprints of the features in multi-dimensional datasets in the form of multi-way arrays or tensors.
+								The decomposition (factorization) of a given tensor \(X\) is typically performed by minimization of the Frobenius norm:</p>
+								<p>$$ \frac{1}{2} ||X-G \otimes_1 A_1 \otimes_2 A_2 \dots \otimes_n A_n ||_F^2 $$</p>
+								<p>where:</p>
+								<ul class="browser-default">
+								<li>\(n\) is the dimensionality of the tensor \(X\)</li>
+								<li>\(G\) is a "mixing" core tensor</li>
+								<li>\(A_1,A_2,\dots,A_n\) are "feature” factors (in the form of vectors or matrices)</li>
+								<li>\(\otimes\) is a tensor product applied to fold-in factors \(A_1,A_2,\dots,A_n\)  in each of the tensor dimensions</li>
+								</ul>
+								<div style="text-align: center">
+									<img src="figures/tucker-paper.png" alt="tucker" height="320"/>
+								</div>
+
+								<p>The product \(G \otimes_1 A_1 \otimes_2 A_2 \dots \otimes_n A_n\) is an estimate of \(X\) (\(X_{est}\)).</p>
+								<p>The reconstruction error \(X - X_{est}\) is expected to be random uncorrelated noise.</p>
+								<p>\(G\) is a \(n\)-dimensional tensor with a size and a rank lower than the size and the rank of \(X\).
+								The size of tensor \(G\) defines the number of extracted features (signals) in each of the tensor dimensions.</p>
+								<p>The factor matrices \(A_1,A_2,\dots,A_n\) represent the extracted features (signals) in each of the tensor dimensions.
+								The number of matrix columns equals the number of features in the respective tensor dimensions (if there is only 1 column, the particular factor is a vector).
+								The number of matrix rows in each factor (matrix) \(A_i\) equals the size of tensor X in the respective dimensions.</p>
+								<p>The elements of tensor \(G\) define how the features along each dimension (\(A_1,A_2,\dots,A_n\)) are mixed to represent the original tensor \(X\).</p>
+								<p>The Tensor Decomposition is commonly performed using <a href="https://en.wikipedia.org/wiki/Tensor_rank_decomposition">Candecomp/Parafac (CP)</a> or <a href="https://en.wikipedia.org/wiki/Tucker_decomposition">Tucker</a> decomposition models.</p>
+								<p>Some of the decomposition models can theoretically lead to unique solutions under specific, albeit rarely satisfied, noiseless conditions.
+								When these conditions are not satisfied, additional minimization constraints can assist the factorization.</p>
+								<p>A popular approach is to add sparsity and nonnegative constraints. Sparsity constraints on the elements of G reduce the number of features and their mixing (by having as many zero entries as possible).
+								Nonnegativity enforces parts-based representation of the original data which also allows the Tensor Decomposition results for \(G\) and \(A_1,A_2,\dots,A_n\) to be easily interrelated <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=KaxssMiWgswC&amp;oi=fnd&amp;pg=PR5&amp;ots=Lta2adM6LV&amp;sig=jNPDxjKlON1U3l46tZAYH92mvAE#v=onepage&amp;q&amp;f=false">Cichocki et al, 2009</a>.</p>
+								<p>Algorithms called <strong>NMFk</strong> and <strong>NTFk</strong> for Matrix/Tensor Factorization (Decomposition) coupled with sparsity and nonnegativity constraints custom k-means clustering has been developed in <a href="http://julialang.org">Julia</a></p>
+								<p><strong>NMFk</strong> and <strong>NTFk</strong> codes will be available soon as open-source on <a href="https://github.com/orgs/TensorDecompositions">GitHub</a>.</p>
+								<div style="text-align: left">
+									<img src="logos/nmfk-logo.png" alt="nmfk logo" height="120"/>
+									<span style="float: right">
+									<img src="logos/ntfk-logo.png" alt="ntfk logo" height="120"/>
+									</span>
+								</div>
+
+								<h4 id="research-papers">Research Papers</h4>
+								<ul class="browser-default">
+								<li>Vesselinov, V.V., Mudunuru, M., Karra, S., O'Malley, D., Alexandrov, B.S., Unsupervised Machine Learning Based on Non-Negative Tensor Factorization for Analyzing Reactive-Mixing, Journal of Computational Physics, 2018 (in review). <a href="papers/Vesselinov et al 2018 Unsupervised Machine Learning Based on Non-Negative Tensor Factorization for Analyzing Reactive-Mixing.pdf">PDF</a></li>
+								<li>Vesselinov, V.V., Alexandrov, B.S., O'Malley, D., Nonnegative Tensor Factorization for Contaminant Source Identification, Journal of Contaminant Hydrology, 10.1016/j.jconhyd.2018.11.010, 2018. <a href="papers/Vesselinov et al 2018 Nonnegative Tensor Factorization for Contaminant Source Identification.pdf">PDF</a></li>
+								<li>O'Malley, D., Vesselinov, V.V., Alexandrov, B.S., Alexandrov, L.B., Nonnegative/binary matrix factorization with a D-Wave quantum annealer, PNAS, 2018, (accepted). <a href="papers/OMalley et al 2017 Nonnegative:binary matrix factorization with a D-Wave quantum annealer.pdf">PDF</a></li>
+								<li>Stanev, V., Vesselinov, V.V., Kusne, A.G., Antoszewski, G., Takeuchi,I., Alexandrov, B.A., Unsupervised Phase Mapping of X-ray Diffraction Data by Nonnegative Matrix Factorization Integrated with Custom Clustering, Nature Computational Materials, 10.1038/s41524-018-0099-2, 2018. <a href="papers/Stanev et al 2018 Unsupervised phase mapping of X-ray diffraction data by nonnegative matrix factorization integrated with custom clustering.pdf&quot;">PDF</a></li>
+								<li>Iliev, F.L., Stanev, V.G., Vesselinov, V.V., Alexandrov, B.S., Nonnegative Matrix Factorization for identification of unknown number of sources emitting delayed signals PLoS ONE, 10.1371/journal.pone.0193974. 2018. <a href="papers/Iliev et al 2018 Nonnegative Matrix Factorization for identification of unknown number of sources emitting delayed signals.pdf">PDF</a></li>
+								<li>Stanev, V.G., Iliev, F.L., Hansen, S.K., Vesselinov, V.V., Alexandrov, B.S., Identification of the release sources in advection-diffusion system by machine learning combined with Green function inverse method, Applied Mathematical Modelling, 10.1016/j.apm.2018.03.006, 2018. <a href="papers/Stanev et al 2018 Identification of release sources in advection-diffusion system by machine learning combined with Green's function inverse method.pdf">PDF</a></li>
+								<li>Vesselinov, V.V., O'Malley, D., Alexandrov, B.S., Contaminant source identification using semi-supervised machine learning, Journal of Contaminant Hydrology, 10.1016/j.jconhyd.2017.11.002, 2017. <a href="papers/Vesselinov 2017 Contaminant source identification using semi-supervised machine learning.pdf">PDF</a></li>
+								<li>Alexandrov, B., Vesselinov, V.V., Blind source separation for groundwater level analysis based on non-negative matrix factorization, Water Resources Research, doi: 10.1002/2013WR015037, 2014. <a href="papers/Alexandrov &amp; Vesselinov 2014 Blind source separation for groundwater pressure analysis based on nonnegative matrix factorization.pdf">PDF</a></li>
+								</ul>
+								<h4 id="presentations">Presentations</h4>
+								<ul class="browser-default">
+								<li>Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models, AGU Fall meeting, Washington D.C., 2018. <a href="presentations/Vesselinov 2018 Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models LA-UR-18-31366.pdf">PDF</a></li>
+								<li>Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models, Recent Advances in Machine Learning and Computational Methods for Geoscience, Institute for Mathematics and its Applications, University of Minnesota, 2018. <a href="presentations/Vesselinov 2018 Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models LA-UR-18-30987.pdf">PDF</a></li>
+								<li>O'Malley, D., Vesselinov, V.V., Alexandrov, B.S., Alexandrov, L.B., Nonnegative/binary matrix factorization with a D-Wave quantum annealer <a href="presentations/OMalley et al 2017 Nonnegative binary matrix factorization with a D-Wave quantum annealer.pdf">PDF</a></li>
+								<li>Vesselinov, V.V., Alexandrov, B.A, Model-free Source Identification, AGU Fall Meeting, San Francisco, CA, 2014. <a href="presentations/vesselinov bss-agu2014-LA-UR-14-29163.pdf">PDF</a>&gt;</li>
+								</ul>
+								<p>Presentations are also available at <a href="https://www.slideshare.net/VelimirmontyVesselin">slideshare.net</a></p>
+								<h4 id="videos">Videos</h4>
+								<ul class="browser-default">
+								<li><a href="https://youtu.be/xPOkeLMJywE">Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models, Recent Advances in Machine Learning and Computational Methods for Geoscience, Institute for Mathematics and its Applications, University of Minnesota, 2018.</a></li>
+								</ul>
+								<h4 id="examples">Examples</h4>
+								<ul class="browser-default">
+								<li><a href="https://madsjulia.github.io/Mads.jl/Examples/blind_source_separation/index.html">Blind Source Separation (i.e. Feature Extraction)</a></li>
+								<li><a href="https://madsjulia.github.io/Mads.jl/Examples/contaminant_source_identification/index.html">Contaminant Source Identification</a></li>
+								</ul>
 							</div>
 						</div>
 					</li>
@@ -551,7 +629,7 @@
 							<div class="left-align" style="padding-left: 30px;">
 								<ul class="browser-default" style="padding-left: 0px;">
 									<p>
-										<img class="materialboxed" src="logos/mads_white_swan_logo_big_text.png" width="80%" align="middle" />
+										<img class="materialboxed" src="logos/mads_white_swan_logo_big_text.png" width="40%" align="middle" />
 									</p>
 								</ul>
 							</div>
@@ -611,7 +689,7 @@
 				<h4>Codes</h4>
 				<ul class="collapsible" data-collapsible="accordion">
 					<li>
-						<div class="collapsible-header"><img src="logos/ntfk-logo.png" width="20%" align="middle" /></div>
+						<div class="collapsible-header"><img src="logos/ntfk-logo.png" width="15%" align="middle" /></div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
 								<h5><strong>TensorDecompositions</strong></h5>
@@ -619,12 +697,14 @@
 									<strong>TensorDecompositions</strong> is a general framework for Unsupervised Machine Learning (ML) using Nonnegative Matrix/Tensor decomposition algorithms.
 								</p>
 								<p>
-									<strong>NMFk/NTFk</strong> (Nonnegative Matrix Factorization/Nonnegative Tensor Factorization) are two of the codes within the TensorDecompositions perform.
+									<strong>NMFk</strong>/<strong>NTFk</strong> (Nonnegative Matrix Factorization/Nonnegative Tensor Factorization) are two of the codes within the TensorDecompositions perform.
 								</p>
-								<p>
-									<img class="materialboxed" src="logos/ntfk-logo.png" width="30%" align="middle" />
-									<img class="materialboxed" src="logos/nmfk-logo.png" width="30%" align="middle" />
-								</p>
+								<div style="text-align: left">
+									<img src="logos/nmfk-logo.png" alt="nmfk logo" height="120"/>
+									<span style="float: right">
+									<img src="logos/ntfk-logo.png" alt="ntfk logo" height="120"/>
+									</span>
+								</div>
 								<p>
 									Unsupervised ML methods can be applied for feature extraction, blind source separation, model diagnostics, ﻿detection of disruptions and anomalies, image recognition, ﻿discovery of unknown dependencies and phenomena represented in datasets as well as development of physics and reduced-order models representing the data.
 									A series of novel unsupervised ML methods based on matrix and tensor factorizations, called NMFk and NTFk have been developed allowing for objective, unbiased, data analyses to extract essential features hidden in data.
@@ -633,11 +713,14 @@
 								<p>
 									TensorDecompositions algorithms are written in <a href="https://julialang.org">Julia</a>.
 								</p>
+								<p>
+									<strong>NMFk</strong>/<strong>NTFk</strong> codes will be available soon as open-source on <a href="https://github.com/orgs/TensorDecompositions">GitHub</a>
+								</p>
 							</div>
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header"><img src="logos/mads_white_swan_logo_big_text.png" width="20%" align="middle" /></div>
+						<div class="collapsible-header"><img src="logos/mads_white_swan_logo_big_text.png" width="15%" align="middle" /></div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
 								<h5><strong>MADS</strong></h5>
@@ -725,7 +808,7 @@
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header"><img src="logos/wells_logo.png" width="20%" align="middle" /></div>
+						<div class="collapsible-header"><img src="logos/wells_logo.png" width="15%" align="middle" /></div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
 								<h5><strong>WELLS</strong></h5>
@@ -942,7 +1025,7 @@
 								</ul>
 								<div class="wrapContainer">
 									<p>
-										<img class="materialboxed" data-caption="Conceptual model of flow at the TA-16 site" src="images/potential_recharge_pathway.jpg" width="50%"/>
+										<img class="materialboxed" data-caption="Conceptual model of flow at the TA-16 site" src="figures/potential_recharge_pathway.jpg" width="50%"/>
 									</p>
 									<strong>Conceptual model of flow at the TA-16 site</strong>
 								</div>
