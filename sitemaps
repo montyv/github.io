@@ -1,4 +1,4 @@
-docker run -it python-sitemap --domain http://monty.gitlab.io > sitemap-gitlab.xml
-docker run -it python-sitemap --domain http://montyv.github.io > sitemap-github-montyv.xml
-docker run -it python-sitemap --domain http://montyvesselinov.github.io > sitemap-github-montyvesselinov.xml
+docker run -it python-sitemap --domain http://monty.gitlab.io --images > sitemap-gitlab.xml
+docker run -it python-sitemap --domain http://montyv.github.io --images > sitemap-github-montyv.xml
+docker run -it python-sitemap --domain http://montyvesselinov.github.io --images > sitemap-github-montyvesselinov.xml
 
