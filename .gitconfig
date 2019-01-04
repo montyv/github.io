@@ -24,3 +24,5 @@
 	locksverify = false
 [lfs "https://gitlab.com/monty/monty.gitlab.io.git/info/lfs"]
 	locksverify = false
+[lfs "https://github.com/montyvesselinov/montyvesselinov.github.io.git/info/lfs"]
+	locksverify = false
