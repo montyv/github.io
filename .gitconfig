@@ -20,3 +20,7 @@
 [remote "gh2"]
 	url = git@github.com:montyv/montyv.github.io.git
 	fetch = +refs/heads/*:refs/remotes/gh/*
+[lfs "https://github.com/montyv/montyv.github.io.git/info/lfs"]
+	locksverify = false
+[lfs "https://gitlab.com/monty/monty.gitlab.io.git/info/lfs"]
+	locksverify = false
