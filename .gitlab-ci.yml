@@ -6,9 +6,9 @@ pages:
     - echo 'Nothing to do...'
   script:
     - mkdir .public
-    - cd .public
-    - ln -sf ../* .
-    - cd ..
+    - cp -r backgrounds codes css figures font fonts images js lanlep logos .public
+    - sed 's/href=\"papers\//href=\"https:\/\/gitlab.com\/monty\/monty.gitlab.io\/raw\/master\/papers\//' index.html | sed 's/href=\"presentations\//href=\"https:\/\/gitlab.com\/monty\/monty.gitlab.io\/raw\/master\/presentations\//' | sed 's/href=\"reports\//href=\"https:\/\/gitlab.com\/monty\/monty.gitlab.io\/raw\/master\/reports\//' > index2.html
+    - mv index2.html index.html
     - mv .public public
   artifacts:
     paths:
