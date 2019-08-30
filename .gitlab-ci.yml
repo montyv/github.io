@@ -3,13 +3,14 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+    - echo 'Nothing to do...'
   script:
     - mkdir .public
-    - cp -r * .public
+    - cd .public
+    - ln -sf ../* .
     - mv .public public
   artifacts:
     paths:
-      - public  
+      - public
   only:
-  - master
+    - master
