@@ -8,6 +8,7 @@ pages:
     - mkdir .public
     - cd .public
     - ln -sf ../* .
+    - cd ..
     - mv .public public
   artifacts:
     paths:
