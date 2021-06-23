@@ -991,9 +991,11 @@
 						<div class="collapsible-header flow-text orange-text text-darken-4"><img src="logos/SmartTensorsNew.png" width="15%" style="vertical-align: middle"/></div>
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
-								<h5><strong>SmartTensors</strong></h5>
 								<p>
 									<strong>SmartTensors</strong> is a general framework for Unsupervised and Physics-Informed Machine Learning (ML) using Nonnegative Matrix/Tensor decomposition algorithms.
+								</p>
+								<p>
+									<img src="logos/SmartTensorsNew.png" width="25%" style="vertical-align: middle"/>
 								</p>
 								<p>
 									<strong>NMFk</strong>/<strong>NTFk</strong> (Nonnegative Matrix Factorization/Nonnegative Tensor Factorization) are two of the codes within the <strong>SmartTensors</strong> perform.
@@ -1016,7 +1018,7 @@
 									<strong>SmartTensors</strong> codes are available as open-source on <a href="https://github.com/orgs/SmartTensors">GitHub</a>
 								</p>
 								<p>
-									<strong>SmartTensors</strong> uses <a href="https://github.com/FluxML" target="_blank">Flux.jl</a>, <a href="https://www.tensorflow.org" target="_blank">TensorFlow</a>, <a href="https://pytorch.org" target="_blank">PyTorch</a>, <a href="https://mxnet.apache.org" target="_blank">MXNet</a>, and <a href="https://www.mathworks.com" target="_blank">MatLab</a>
+									<strong>SmartTensors</strong> can utilize various external compuiting platforms, including <a href="https://github.com/FluxML" target="_blank">Flux.jl</a>, <a href="https://www.tensorflow.org" target="_blank">TensorFlow</a>, <a href="https://pytorch.org" target="_blank">PyTorch</a>, <a href="https://mxnet.apache.org" target="_blank">MXNet</a>, and <a href="https://www.mathworks.com" target="_blank">MatLab</a>
 								</p>
 							</div>
 						</div>
@@ -1025,9 +1027,8 @@
 						<div class="collapsible-header flow-text orange-text text-darken-4"><img src="logos/mads_white_swan_logo_big_text.png" width="15%" style="vertical-align: middle" /></div>
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
-								<h5><strong>MADS</strong></h5>
 								<p>
-									<strong>MADS</strong> (Model Analysis &amp; Decision Support) MADS is an integrated open-source high-performance computational (HPC) framework.
+									<strong>MADS</strong> (Model Analysis &amp; Decision Support) is an integrated open-source high-performance computational (HPC) framework.
 								</p>
 								<img class="materialboxed" src="logos/mads_white_swan_logo_big_text.png" width="40%" style="vertical-align: middle" />
 								<p>
@@ -1058,7 +1059,7 @@
 								</ul>
 
 								<p>
-									<strong>MADS</strong> has been tested to perform HPC simulations on a wide-range multi-processor clusters and parallel environments (Moab, Slurm, etc.).
+									<strong>MADS</strong> has been tested to perform HPC simulations on a wide-range multi-processor clusters and cloud parallel environments (Moab, Slurm, etc.).
 								</p>
 								<p>
 									<strong>MADS</strong> utilizes adaptive rules and techniques which allows the analyses to be performed with a minimum user input.
@@ -1081,7 +1082,7 @@
 									<strong>MADS</strong> current stable version has been actively updated.
 								</p>
 								<p>
-									Professional softwares/codes with somewhat similar but not equivalent capabilities are:
+									Codes with somewhat similar but not equivalent capabilities are:
 								</p>
 								<ul class="browser-default">
 									<li>
@@ -1098,7 +1099,7 @@
 									</li>
 								</ul>
 								<p>
-									<strong>MADS</strong> source code and example input/output files <a href="http://mads.gitlab.io" target="_blank">MADS website</a>.
+									<strong>MADS</strong> source code and example input/output files are available at the <a href="http://mads.gitlab.io" target="_blank">MADS website</a>.
 								</p>
 								<p>
 									<strong>MADS</strong> documentation is available at <a href="https://madsjulia.github.io/Mads.jl" target="_blank">github</a> and  <a href="https://madsjulia.github.io/Mads.jl" target="_blank">gilab</a>.
@@ -1110,14 +1111,15 @@
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header flow-text orange-text text-darken-4"><img src="logos/wells_logo.png" width="15%" style="vertical-align: middle" /></div>
+						<div class="collapsible-header flow-text orange-text text-darken-4"><img src="logos/wells_logo-transperant.png" width="15%" style="vertical-align: middle" /></div>
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
 								<h5><strong>WELLS</strong></h5>
 								<p>
-									<strong>WELLS</strong> is a C code simulating drawdowns caused by multiple pumping/injecting wells using analytical solutions.
+									<strong>WELLS</strong> is a code simulating drawdowns caused by multiple pumping/injecting wells using analytical solutions.
+									<strong>WELLS</strong> has a C and Julia language versions.
 								</p>
-								<img class="materialboxed" src="logos/wells_logo.png" width="40%" style="vertical-align: middle" />
+								<img class="materialboxed" src="logos/wells_logo-transperant.png" width="40%" style="vertical-align: middle" />
 								<p>
 									<strong>WELLS</strong> can represent pumping in confined, unconfined, and leaky aquifers.
 								</p>
@@ -1158,13 +1160,18 @@
 								</ul>
 								<p>
 									<strong>WELLS</strong> has been applied to decompose transient water-supply pumping influences in observed water levels at the LANL site (<a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/papers/Harp & Vesselinov 2010 gw.pdf">Harp and Vesselinov, 2010a</a>).
-									For example, the figure below shows simulated drawdowns caused by pumping of PM-2, PM-3, PM-4 and PM-5 on water levels observed at R-15.
+								</p>
+								<p>
+									For example, the figure below shows <strong>WELLS</strong> simulated drawdowns caused by pumping of PM-2, PM-3, PM-4 and PM-5 on water levels observed at R-15.
 								</p>
 								<p>
 									<img class="materialboxed" src="codes/wells/r15-v04-dcmp-clr.png" width="80%" style="vertical-align: middle" />
 								</p>
 								<p>
-										Codes with similar capabilities are <a href="https://www.waterloohydrogeologic.com/aquifertest" target="_blank">AquiferTest</a>. <a href="http://www.rockware.com/product/overview.php?id=71" target="_top">AquiferWin32</a>, <a href="http://www.aqtesolv.com/" target="_blank">Aqtesolv</a>, <a href="http://www.microfem.nl/products/mlu.html" target="_blank">MLU</a>, and <a href="http://pubs.usgs.gov/wri/wri99-4225/" target="_blank">WTAQ</a>.
+									The mode inversion of the <strong>WELLS</strong> model predictions is achieved usint the code <strong>MADS</strong>.
+								</p>
+								<p>
+									Codes with similar capabilities are <a href="https://www.waterloohydrogeologic.com/aquifertest" target="_blank">AquiferTest</a>. <a href="http://www.rockware.com/product/overview.php?id=71" target="_top">AquiferWin32</a>, <a href="http://www.aqtesolv.com/" target="_blank">Aqtesolv</a>, <a href="http://www.microfem.nl/products/mlu.html" target="_blank">MLU</a>, and <a href="http://pubs.usgs.gov/wri/wri99-4225/" target="_blank">WTAQ</a>.
 								</p>
 								<p>
 									<strong>WELLS</strong> source code, example input/output files, and a manual are available at the WELLS websites: <a href="http://wells.lanl.gov" target="_blank">LANL</a> <a href="http://wells.gitlab.io" target="_blank">GitLab</a> <a href="https://github.com/madsjulia/Wells.jl" target="_blank">Julia GitHub</a>
