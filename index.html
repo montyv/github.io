@@ -27,19 +27,15 @@
 <body>
 
 <nav role="navigation">
-	<div class="nav-wrapper">
-		<nav role="navigation" class="grey darken-4" >
-			<div class="nav-wrapper container">
-				<a id="logo-container" href="#codes" class="brand-logo white-text" style="font-size: 15px;">Velimir V Vesselinov (monty)</a>
-			</div>
-		</nav>
+	<div class="nav-wrapper grey darken-4">
+		<a id="logo-container" href="#codes" class="brand-logo white-text center" style="font-size: 18px;">Velimir V Vesselinov (monty)</a>
+		<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 		<ul id="nav-mobile" class="sidenav grey lighten-1" style="width: 150px">
 			<li><a href="#information">Information</a></li>
 			<li><a href="#research">Research</a></li>
 			<li><a href="#codes">Codes</a></li>
 			<li><a href="#projects">Projects</a></li>
 		</ul>
-		<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 	</div>
 </nav>
 
@@ -574,7 +570,11 @@
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header">Patent</div>
+						<div class="collapsible-header">Projects</div>
+						<div class="collapsible-body">
+						</div>
+					<li>
+						<div class="collapsible-header">Patents</div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
 								<ul class="browser-default" style="padding-left: 0px;">
@@ -1028,7 +1028,7 @@
 						<div class="collapsible-header">MPEST</div>
 						<div class="collapsible-body">
 							<div class="left-align" style="padding-left: 30px;">
-								<h5><strong>MPEST / MPRUN</strong></h5>
+								<h6><strong>MPEST</strong></h6>
 								<p>
 									<strong>MPEST</strong> is a LANL-develeoped parallel version of the code <a href="http://www.pesthomepage.org" target="_blank">PEST</a> (Doherty 2009).
 								</p>
@@ -1039,16 +1039,10 @@
 									<strong>MPEST</strong> has been applied in many parallel computing projects worldwide.
 								</p>
 								<p>
-									<strong>MPEST</strong> parallelization framework is using the code <strong>MPRUN</strong>, a code that has been also developed at LANL.
+									<strong>MPEST</strong> parallelization framework is using POSIX threads to fork individual model runs to processors; this approach has been demonstrated to be very effective and superior to using MPI calls in terms of computational performance.
 								</p>
 								<p>
-									<strong>MPRUN</strong> is using POSIX threads to fork individual model runs to processors; this approach has been demonstrated to be very effective and superior to using MPI calls in terms of computational performance.
-								</p>
-								<p>
-									<strong>MPEST/MPRUN </strong> parallel subroutines are currently imported and further developed in the code <a href="http://mads.gitlab.io" target="_blank">MADS</a>. The source code, example input/output files, and a manual are available at <a href="http://mads.gitlab.io" target="_blank">MADS website</a>.
-								</p>
-								<p>
-									<a href="mailto:vvv@lanl.gov">Send me email</a>
+									<strong>MPEST</strong> parallel subroutines are currently imported and further developed in the code <a href="http://mads.gitlab.io" target="_blank">MADS</a>. The source code, example input/output files, and a manual are available at <a href="http://mads.gitlab.io" target="_blank">MADS website</a>.
 								</p>
 							</div>
 						</div>
