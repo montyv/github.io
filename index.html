@@ -755,26 +755,29 @@
 <div id="research" class="scrollspy grey lighten-2">
 	<div class="section">
 		<div class="row">
-			<h5 style="padding-left: 20px">Research</h5>
+			<h5 style="padding-left: 20px">Major Research Directions</h5>
 			<div class="col s12 center">
 				<ul class="collapsible" data-collapsible="accordion">
 					<li>
 						<div class="collapsible-header flow-text orange-text text-darken-4">Machine Learning</div>
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
-								<p>Unsupervised Machine Learning methods are powerful data-analytics tools capable of extracting important features hidden (latent) in large datasets without any prior information.
+								<p>Unsupervised Machine Learning (ML) methods are powerful data-analytics tools capable of extracting important features hidden (latent) in large datasets without any prior information.
 								The physical interpretation of the extracted features is done <em>a posteriori</em> by subject-matter experts.</p>
-								<p>In contrast, supervised Machine Learning methods are trained based on large labeled datasets
+								<p>In contrast, supervised ML methods are trained based on large labeled datasets
 								The labeling is performed <em>a priori</em> by subject-matter experts.
-								The process of deep Machine Learning commonly includes both unsupervised and supervised techniques <a href="https://www.nature.com/articles/nature14539">LeCun, Bengio, and Hinton 2015</a> where unsupervised Machine Learning are applied to facilitate the process of data labeling.</p>
-								<p>The integration of large datasets, powerful computational capabilities, and affordable data storage has resulted in the widespread use of Machine Learning in science, technology, and industry.</p>
-								<p>Recently we have developed a novel unsupervised Machine Learning methods.
-								The methods are based on Matrix/Tensor Decomposition (Factorization) coupled with sparsity and nonnegativity constraints.
-								The method reveals the temporal and spatial footprints of the extracted features.</p>
+								The process of deep ML commonly includes both unsupervised and supervised techniques <a href="https://www.nature.com/articles/nature14539">LeCun, Bengio, and Hinton 2015</a> where unsupervised Machine Learning are applied to facilitate the process of data labeling.</p>
 
-								<h3 id="tensor-decomposition">Tensor Decomposition</h3>
-								<p>A novel unsupervised Machine Learning based on Tensor Decomposition coupled with sparsity and nonnegativity constraints has been applied to extract the temporal and spatial footprints of the features in multi-dimensional datasets in the form of multi-way arrays or tensors.
-								The decomposition (factorization) of a given tensor \(X\) is typically performed by minimization of the Frobenius norm:</p>
+								<p>The integration of large datasets, powerful computational capabilities, and affordable data storage has resulted in the widespread use of ML/AI in science, technology, and industry.</p>
+								<p>Recently, we have developed a novel unsupervised and physics-informed ML methods.
+								The methods utilize Matrix/Tensor Decomposition (Factorization) coupled with physics, sparsity and nonnegativity constraints.
+								The methods are capable to reveal the temporal and spatial footprints of the extracted features.</p>
+
+								<h4>SmartTensors</h4>
+								<p><a href="https://github.com/SmartTensors" target="_blank">SmartTensors</a> is a general framework for Unsupervised and Physics-Informed Machine Learning and Artificial Intelligence (ML/AI).</p>
+								<p><a href="https://github.com/SmartTensors" target="_blank">SmartTensors</a> incorporates a novel unsupervised ML based on tensor decomposition coupled with physics, sparsity and nonnegativity constraints.</p>
+								<p><a href="https://github.com/SmartTensors" target="_blank">SmartTensors</a> has been applied to extract the temporal and spatial footprints of the features in multi-dimensional datasets in the form of multi-way arrays or tensors.</p>
+								<p>The decomposition (factorization) of a given tensor \(X\) is typically performed by minimization of the Frobenius norm:</p>
 								<p>$$ \frac{1}{2} ||X-G \otimes_1 A_1 \otimes_2 A_2 \dots \otimes_n A_n ||_F^2 $$</p>
 								<p>where:</p>
 								<ul class="browser-default">
@@ -795,13 +798,14 @@
 								The number of matrix columns equals the number of features in the respective tensor dimensions (if there is only 1 column, the particular factor is a vector).
 								The number of matrix rows in each factor (matrix) \(A_i\) equals the size of tensor X in the respective dimensions.</p>
 								<p>The elements of tensor \(G\) define how the features along each dimension (\(A_1,A_2,\dots,A_n\)) are mixed to represent the original tensor \(X\).</p>
-								<p>The Tensor Decomposition is commonly performed using <a href="https://en.wikipedia.org/wiki/Tensor_rank_decomposition">Candecomp/Parafac (CP)</a> or <a href="https://en.wikipedia.org/wiki/Tucker_decomposition">Tucker</a> decomposition models.</p>
+								<p>The tensor decomposition is commonly performed using <a href="https://en.wikipedia.org/wiki/Tensor_rank_decomposition">Candecomp/Parafac (CP)</a> or <a href="https://en.wikipedia.org/wiki/Tucker_decomposition">Tucker</a> decomposition models.</p>
 								<p>Some of the decomposition models can theoretically lead to unique solutions under specific, albeit rarely satisfied, noiseless conditions.
 								When these conditions are not satisfied, additional minimization constraints can assist the factorization.</p>
-								<p>A popular approach is to add sparsity and nonnegative constraints. Sparsity constraints on the elements of G reduce the number of features and their mixing (by having as many zero entries as possible).
-								Nonnegativity enforces parts-based representation of the original data which also allows the Tensor Decomposition results for \(G\) and \(A_1,A_2,\dots,A_n\) to be easily interrelated <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=KaxssMiWgswC&amp;oi=fnd&amp;pg=PR5&amp;ots=Lta2adM6LV&amp;sig=jNPDxjKlON1U3l46tZAYH92mvAE#v=onepage&amp;q&amp;f=false">Cichocki et al, 2009</a>.</p>
-								<p>Algorithms called <strong>NMFk</strong> and <strong>NTFk</strong> for Matrix/Tensor Factorization (Decomposition) coupled with sparsity and nonnegativity constraints custom k-means clustering has been developed in <a href="http://julialang.org">Julia</a></p>
-								<p><strong>NMFk</strong> and <strong>NTFk</strong> codes are available as open-source on <a href="https://github.com/orgs/SmartTensors">GitHub</a>.</p>
+								<p>A popular approach is to add sparsity and nonnegative constraints.
+								Sparsity constraints on the elements of G reduce the number of features and their mixing (by having as many zero entries as possible).
+								Nonnegativity enforces parts-based representation of the original data which also allows the tensor decomposition results for \(G\) and \(A_1,A_2,\dots,A_n\) to be easily interrelated <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=KaxssMiWgswC&amp;oi=fnd&amp;pg=PR5&amp;ots=Lta2adM6LV&amp;sig=jNPDxjKlON1U3l46tZAYH92mvAE#v=onepage&amp;q&amp;f=false">Cichocki et al, 2009</a>.</p>
+								<p><a href="https://github.com/SmartTensors" target="_blank">SmartTensors</a> algorithms called <strong>NMFk</strong> and <strong>NTFk</strong> for Matrix/Tensor Factorization (Decomposition) coupled with sparsity and nonnegativity constraints custom k-means clustering has been developed in <a href="http://julialang.org">Julia</a></p>
+								<p><a href="https://github.com/SmartTensors" target="_blank">SmartTensors</a> codes are available as open source on <a href="https://github.com/orgs/SmartTensors">GitHub</a>.</p>
 								<div style="text-align: left">
 									<img src="logos/nmfk-logo.png" alt="nmfk logo" height="120"/>
 									<span style="float: right">
@@ -809,7 +813,7 @@
 									</span>
 								</div>
 
-								<h4 id="research-papers">Research Papers</h4>
+								<h5>Research Papers:</h5>
 								<ul class="browser-default">
 									<li>
 										Vesselinov, V.V., Mudunuru, M., Karra, S., O'Malley, D., Alexandrov, B.S., Unsupervised Machine Learning Based on Non-Negative Tensor Factorization for Analyzing Reactive-Mixing, 10.1016/j.jcp.2019.05.039, Journal of Computational Physics, 2019. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/papers/Vesselinov et al 2018 Unsupervised Machine Learning Based on Non-Negative Tensor Factorization for Analyzing Reactive-Mixing.pdf">PDF</a>
@@ -836,7 +840,7 @@
 										Alexandrov, B., Vesselinov, V.V., Blind source separation for groundwater level analysis based on non-negative matrix factorization, Water Resources Research, 10.1002/2013WR015037, 2014. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/papers/Alexandrov & Vesselinov 2014 Blind source separation for groundwater pressure analysis based on nonnegative matrix factorization.pdf">PDF</a>
 									</li>
 									</ul>
-									<h4 id="presentations">Presentations</h4>
+									<h5>Presentations:</h5>
 									<ul class="browser-default">
 									<li>
 										Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models, AGU Fall meeting, Washington D.C., 2018. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/presentations/Vesselinov 2018 Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models LA-UR-18-31366.pdf">PDF</a>
@@ -852,7 +856,7 @@
 									</li>
 								</ul>
 								<p>Presentations are also available at <a href="https://www.slideshare.net/VelimirmontyVesselin">slideshare.net</a></p>
-								<h4 id="videos">Videos</h4>
+								<h5>Videos:</h5>
 								<ul class="browser-default">
 									<li>
 										<a href="https://youtu.be/rV2rM4X5_co">Vesselinov, V.V., Unsupervised and Physics-Informed Machine Learning of Big and Noisy Data, Bureau of Economic Geology, University of Austin, Texas, 2020.</a>
@@ -860,9 +864,8 @@
 									<li>
 										<a href="https://youtu.be/xPOkeLMJywE">Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models, Recent Advances in Machine Learning and Computational Methods for Geoscience, Institute for Mathematics and its Applications, University of Minnesota, 2018.</a>
 									</li>
-
 								</ul>
-								<h4 id="examples">Examples</h4>
+								<h5>Examples:</h5>
 								<ul class="browser-default">
 									<li>
 										<a href="https://madsjulia.github.io/Mads.jl/Examples/blind_source_separation/index.html">Blind Source Separation (i.e. Feature Extraction)</a>
@@ -883,7 +886,7 @@
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
 								<p>
-									Model Diagnostics is performed using <strong>MADS</strong> (Model Analysis &amp; Decision Support) MADS framework.
+									My model diagnostics is performed using the <strong>MADS</strong> (Model Analysis &amp; Decision Support) framework.
 									<strong>MADS</strong> is an integrated open-source high-performance computational (HPC) framework.
 								</p>
 								<img class="materialboxed" src="logos/mads_white_swan_logo_big_text.png" width="40%" style="vertical-align: middle" />
@@ -959,11 +962,9 @@
 									<strong>MADS</strong> documentation is available at <a href="https://madsjulia.github.io/Mads.jl" target="_blank">github</a> and  <a href="https://madsjulia.github.io/Mads.jl" target="_blank">gilab</a>.
 								</p>
 								<p>
-									<strong>MADS</strong> old sites: <a href="http://mads.lanl.gov" target="_blank">LANL</a>, <a href="http://madsc.lanl.gov" target="_blank">LANL C</a>, <a href="http://http://madsjulia.lanl.gov" target="_blank">LANL Julia</a>, <a href="http://madspy.lanl.gov" target="_blank">LANL Python</a>
+									The C version of the <strong>MADS</strong> code is also available: <a href="http://madsc.lanl.gov" target="_blank">MADS C website</a> and <a href="http://gitlab.com/monty/mads" target="_blank">MADS C source </a>.
+									A Python interface for <strong>MADS</strong> is under development: <a href="http://madspy.lanl.gov" target="_blank">Python</a>
 								</p>
-							</div>
-						</div>
-
 							</div>
 						</div>
 					</li>
@@ -1245,7 +1246,12 @@
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
 								<h5>DiaMonD: Mathematics at the Interfaces of Data, Models, and Decisions</h5>
-								<strong>LANL PI: Velimir V Vesselinov</strong>
+								<p>
+									<img src="logos/diamond-logo.png" />
+								</p>
+								<p>
+									<strong>LANL PI: Velimir V Vesselinov</strong>
+								</p>
 								<p>
 									<strong>DiaMonD</strong> is a project funded by the U.S. Department of Energy Office of Science.
 								</p>
@@ -1256,8 +1262,50 @@
 									<strong>DiaMonD</strong> involves researchers from Colorado State University, Florida State University, Los Alamos National Laboratory, Massachusetts Institute of Technology, Oak Ridge National Laboratory, University of Texas at Austin, and Stanford University.
 								</p>
 								<p>
-									<strong>DiaMonD</strong> <a href="http://dmd.mit.edu" target="_blank">web site</a>.
+									More information about the <strong>DiaMonD</strong> work, collaborators, and publications can be find on the <a href="http://dmd.mit.edu" target="_blank">project web site</a>.
 								</p>
+								<h5>A project developed computer code:</h5>
+								<ul class="browser-default">
+									<li>
+										<a href="https://madsjulia.github.io" target="_blank">MADS</a>: Model Analysis &amp; Decision Support
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header flow-text orange-text text-darken-4">ASCEM</div>
+						<div class="collapsible-body flow-text-small">
+							<div class="left-align" style="padding-left: 30px;">
+								<h5><a href="http://esd.lbl.gov/research/projects/ascem" target="_blank">ASCEM</a></h5>
+								<h5 style="line-height: 120%">Advanced Simulation Capability for Environmental Management</h5>
+								<p>
+									<img src="logos/ascem.png" />
+								</p>
+								<p>
+									<strong>Decision Support PI: Velimir V Vesselinov</strong>
+								</p>
+								<p>
+									A consortium of multiple national laboratories has developed high-performance computing capabilities to meet the challenge of waste disposal and cleanup left over from the creation of the US nuclear stockpile decades ago.
+									The project is funded by the <a href="http://www.doe.gov/">Department of Energy</a> <a href="http://www.doe.gov/">Office for Environmental Management (DOE-EM)</a>.
+								</p>
+								<p>
+									Within <a href="http://esd.lbl.gov/research/projects/ascem" target="_blank">ASCEM</a>, the goal of the &quot;<a href="https://svn.pnl.gov/ASCEM/wiki/Decision%20Support">Decision Support</a>&quot; task is to create a computational framework that facilitates the decision making by site-application users, modelers, stakeholders, and decision/policy makers.
+									The decision-support framework leverages on existing and novel theoretical methods and computational techniques to meet the general decision-making needs of DOE-EM as well as the particular site-specific needs of individual environmental management sites.
+								</p>
+								<p>
+									The decision-support framework can be applied to identify what kind of model analyses should be performed to mitigate the risk at a given environmental management site, and, if needed, support the design of data-acquisition campaigns, field experiments, monitoring networks, and remedial systems.
+									Depending on the problem, decision-support framework utilizes various types of model analyses such as parameter estimation, sensitivity analysis, uncertainty quantification, risk assessment, experimental design, cost estimation, data-worth (value of information) analysis, etc.
+								</p>
+								<h5>Relevant computer codes:</h5>
+								<ul class="browser-default">
+									<li>
+										<a href="https://madsjulia.github.io" target="_blank">MADS</a>: Model Analysis &amp; Decision Support
+									</li>
+									<li>
+										<a href="https://github.com/amanzi/amanzi" target="_blank">Amanzi</a>: Model Simulator
+									</li>
+								</ul>
 							</div>
 						</div>
 					</li>
@@ -1267,10 +1315,13 @@
 							<div class="left-align" style="padding-left: 30px;">
 								<h5><a href="http://www.lanl.gov/environment/">LANL Environmental Management</a></h5>
 								<strong>
-									PI of &quot;Vadose Zone and Regional Aquifer Flow and Transport Modeling&quot;: Velimir V Vesselinov
+									PI of Vadose Zone and Regional Aquifer Flow and Transport Modeling: Velimir V Vesselinov
 								</strong>
 								<p>
-									<a href="http://www.lanl.gov">Los Alamos National Laboratory (LANL)</a> is a complex site for environmental management. The site encompasses about 100 km2 (37 square miles) of terrain with 600 m (2,000 feet) of elevation change, and an average rainfall of less than 300-400 mm (12 to 16 inches) per year. The site is intersected by 14 major canyon systems. Ecosystems within the site range from riparian to high desert and boast over 2,000 archaeological sites, as well as endangered species habitats.  The surface and subsurface water flow discharges primarily along the Rio Grande to the east of LANL. The Rio Grande traverses the Española basin from north to south; several major municipalities use the river water downgradient from LANL for water supply (Santa Fe, Albuquerque, El Paso/Juarez).
+									<a href="http://www.lanl.gov">Los Alamos National Laboratory (LANL)</a> is a complex site for environmental management. The site encompasses about 100 km2 (37 square miles) of terrain with 600 m (2,000 feet) of elevation change, and an average rainfall of less than 300-400 mm (12 to 16 inches) per year.
+									The site is intersected by 14 major canyon systems. Ecosystems within the site range from riparian to high desert and boast over 2,000 archaeological sites, as well as endangered species habitats. 
+									The surface and subsurface water flow discharges primarily along the Rio Grande to the east of LANL.
+									The Rio Grande traverses the Española basin from north to south; several major municipalities use the river water downgradient from LANL for water supply (Santa Fe, Albuquerque, El Paso/Juarez).
 								</p>
 								<div class="wrapContainer">
 									<p>
@@ -1280,13 +1331,26 @@
 								</div>
 								<h5>Regional aquifer beneath LANL</h5>
 								<p>
-									The regional aquifer beneath LANL is a complex hydrogeological system.  The regional aquifer extends throughout the Española basin, and is an important source for municipal water supply for Santa Fe, Los Alamos, Española, LANL, and several Native-American Pueblos. The wells providing groundwater from this aquifer for Los Alamos and LANL are located within the LANL site and in close proximity to existing contamination sites. The regional aquifer is comprised of sediments and lavas with heterogeneous flow and transport properties. The general shape of the regional water table is predominantly controlled by the areas of regional recharge to the west (the flanks of the Sierra de los Valles and the Pajarito fault zone) and discharge to the east (the Rio Grande and the White Rock Canyon Springs). At more local scales, the structure of groundwater flow is also influenced by (1) local infiltration zones (e.g., beneath wet canyons); (2) heterogeneity and anisotropy in the aquifer properties; and (3) discharge zones (municipal water-supply wells and springs). The aquifer is also characterized by well-defined, vertical stratification which, in general, provides sufficient protection of the deep groundwater resources.
+									The regional aquifer beneath LANL is a complex hydrogeological system.
+									The regional aquifer extends throughout the Española basin, and is an important source for municipal water supply for Santa Fe, Los Alamos, Española, LANL, and several Native-American Pueblos.
+									The wells providing groundwater from this aquifer for Los Alamos and LANL are located within the LANL site and in close proximity to existing contamination sites.
+									The regional aquifer is comprised of sediments and lavas with heterogeneous flow and transport properties.
+									The general shape of the regional water table is predominantly controlled by the areas of regional recharge to the west (the flanks of the Sierra de los Valles and the Pajarito fault zone) and discharge to the east (the Rio Grande and the White Rock Canyon Springs).
+									At more local scales, the structure of groundwater flow is also influenced by (1) local infiltration zones (e.g., beneath wet canyons); (2) heterogeneity and anisotropy in the aquifer properties; and (3) discharge zones (municipal water-supply wells and springs).
+									The aquifer is also characterized by well-defined, vertical stratification, which, in general, provides sufficient protection of the deep groundwater resources.
 								</p>
 								<p>
-									The vadose zone, between the ground surface and the top of the regional aquifer, is about 180-300 m (600-1000 ft) thick. The vadose zone is comprised of sediments and lavas with heterogeneous flow and transport properties. The variably-saturated flow and transport through the thick vadose zone occurs through pores and fractures, and is predominantly vertical with lateral deviations along perching zones. The groundwater velocities in the vadose zone are high beneath wet canyons (up to 1 m/a) and low beneath the mesas (1 mm/a). Due to complexities in local hydrogeologic conditions, the hydraulic separation between the regional aquifer and the vadose zone is difficult to identify at some localities, especially where mountain-front recharge is pronounced.
+									The vadose zone, between the ground surface and the top of the regional aquifer, is about 180-300 m (600-1000 ft) thick.
+									The vadose zone is comprised of sediments and lavas with heterogeneous flow and transport properties.
+									The variably-saturated flow and transport through the thick vadose zone occurs through pores and fractures, and is predominantly vertical with lateral deviations along perching zones.
+									The groundwater velocities in the vadose zone are high beneath wet canyons (up to 1 m/a) and low beneath the mesas (1 mm/a).
+									Due to complexities in local hydrogeologic conditions, the hydraulic separation between the regional aquifer and the vadose zone is difficult to identify at some localities, especially where mountain-front recharge is pronounced.
 								</p>
 								<p>
-									The complexity and size of the LANL site make environmental management a continuing engineering and scientific challenge. Legacy contamination—both chemical and radioactive—exists at many locations. Some of the oldest worldwide radioactive Material Disposal Areas (MDA’s), where waste is buried in pits and shafts, are located on the site. LANL is mandated to follow timetables and requirements specified by the Compliance Order on Consent from the New Mexico Environment Department (NMED) for investigation, monitoring, and remediation of hazardous constituents and contaminated sites. Currently, all the remediation activities are scheduled for completion in 2015.  LANL is taking actions to prevent potential contaminant effects on human health and the environment.
+									The complexity and size of the LANL site make environmental management a continuing engineering and scientific challenge.
+									Legacy contamination—both chemical and radioactive—exists at many locations.
+									Some of the oldest worldwide radioactive Material Disposal Areas (MDA’s), where waste is buried in pits and shafts, are located on the site.
+									LANL is mandated to follow timetables and requirements specified by the Compliance Order on Consent from the New Mexico Environment Department (NMED) for investigation, monitoring, and remediation of hazardous constituents and contaminated sites.
 								</p>
 								<div class="wrapContainer">
 									<p>
@@ -1295,13 +1359,17 @@
 									<strong>Map of monitoring wells at the LANL site</strong>
 								</div>
 								<p>
-									The environmental work performed at the LANL site is managed by the <a href="http://www.lanl.gov/environment">Environmental Programs (EP) Directorate</a>. A team of external and LANL (Computational Earth Sciences Group, Earth &amp; Environmental Sciences) researchers is tasked by the EP Directorate to provide modeling and decision support to enable scientifically-defensible mitigation of the risks associated with various LANL sites. The principal investigator of this team is Velimir Vesselinov.
+									The environmental work performed at the LANL site is managed by the <a href="http://www.lanl.gov/environment">Environmental Programs (EP) Directorate</a>.
+									A team of external and LANL (Computational Earth Sciences Group, Earth &amp; Environmental Sciences) researchers is tasked by the EP Directorate to provide modeling and decision support to enable scientifically-defensible mitigation of the risks associated with various LANL sites.
+									The principal investigator of this team for more than a decade has been Velimir Vesselinov.
 								</p>
 								<p>
-									Since the 1950's, the LANL site has been the subject of intensive studies for characterization of the site conditions, including regional geology and hydrogeology. Various types of research have been performed at the site related to contaminant transport in the environment which include (1) laboratory experiments, (2) field tests, and (3) conceptual and numerical model analyses. The work is presented in a series of technical reports and peer-reviewed publications.
+									Since the 1950's, the LANL site has been the subject of intensive studies for characterization of the site conditions, including regional geology and hydrogeology.
+									Various types of research have been performed at the site related to contaminant transport in the environment which include (1) laboratory experiments, (2) field tests, and (3) conceptual and numerical model analyses.
+									The work is presented in a series of technical reports and peer-reviewed publications.
 								</p>
 								<p>
-									Currently, important aspects of the environmental management at the LANL site include:
+									Important aspects of the environmental management at the LANL site include:
 								</p>
 								<ul class="browser-default">>
 									<li>
@@ -1316,7 +1384,12 @@
 								</ul>
 								<h5>Chromium plume in the regional aquifer</h5>
 								<p>
-									A chromium plume has been identified in the regional aquifer beneath the LANL site. Our team has been tasked with providing modeling decision support to the Environmental Programs (EP) Directorate to enable scientifically-defensible mitigation of the risks associated with chromium migration in the environment. Large amount of data and information are available related to the chromium site (vadose-zone moisture content, aquifer water levels, contaminant concentrations, geologic observations, drilling logs, etc.); they are used to develop and refine conceptual and numerical models of the contaminant transport in the environment. The development of numerical models and performance of model analyses (model calibration, sensitivity analyses, parameter estimations, uncertainty quantification, source identification, data-worth analyses, monitoring-network design, etc.) is a computationally intensive effort due to large model domains, large numbers of computational nodes, complex flow media (porous and fracture flow), and long model-execution times. Due to complexities in the model-parameter space, most of the model analyses require a substantial number of model executions. To improve computational effectiveness, our team utilizes state-of-the-art parallel computational resources and novel theoretical and computational methods for model calibration, uncertainty analysis, risk assessment and decision support.
+									A chromium plume has been identified in the regional aquifer beneath the LANL site.
+									Our team has been tasked with providing modeling decision support to the Environmental Programs (EP) Directorate to enable scientifically-defensible mitigation of the risks associated with chromium migration in the environment.
+									A large amount of data and information are available related to the chromium site (vadose-zone moisture content, aquifer water levels, contaminant concentrations, geologic observations, drilling logs, etc.); they are used to develop and refine conceptual and numerical models of the contaminant transport in the environment.
+									The development of numerical models and performance of model analyses (model calibration, sensitivity analyses, parameter estimations, uncertainty quantification, source identification, data-worth analyses, monitoring-network design, etc.) is a computationally intensive effort due to large model domains, large numbers of computational nodes, complex flow media (porous and fracture flow), and long model-execution times.
+									Due to complexities in the model-parameter space, most of the model analyses require a substantial number of model executions.
+									To improve computational effectiveness, our team utilizes state-of-the-art parallel computational resources and novel theoretical and computational methods for model calibration, uncertainty analysis, risk assessment, and decision support.
 								</p>
 								<p>
 									Numerical modeling of flow and transport in the regional aquifer near Sandia Canyon
@@ -1354,34 +1427,6 @@
 									</li>
 									<li>
 										<a href="http://wells.lanl.gov">WELLS</a>: Analytical simulator of drawdowns caused by multiple pumping wells
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="collapsible-header flow-text orange-text text-darken-4">ASCEM</div>
-						<div class="collapsible-body flow-text-small">
-							<div class="left-align" style="padding-left: 30px;">
-								<h5><a href="http://esd.lbl.gov/research/projects/ascem" target="_blank">ASCEM</a></h5>
-								<h5 style="line-height: 120%">Advanced Simulation Capability for Environmental Management</h5>
-								<strong>Decision Support PI: Velimir V Vesselinov</strong>
-								<p>
-									A consortium of multiple national laboratories is developing high performance computer modeling capabilities to meet the challenge of waste disposal and cleanup left over from the creation of the US nuclear stockpile decades ago.
-									The project is funded by the <a href="http://www.doe.gov/">Department of Energy</a> <a href="http://www.doe.gov/">Office for Environmental Management (DOE-EM)</a>.
-								</p>
-								<p>
-									Within <a href="http://esd.lbl.gov/research/projects/ascem" target="_blank">ASCEM</a>, the goal of the &quot;<a href="https://svn.pnl.gov/ASCEM/wiki/Decision%20Support">Decision Support</a>&quot; task is to create a computational framework that facilitates the decision making by site-application users, modelers, stakeholders, and decision/policy makers.
-									The decision-support framework leverages on existing and novel theoretical methods and computational techniques to meet the general decision-making needs of DOE-EM as well as the particular site-specific needs of individual environmental management sites.
-								</p>
-								<p>
-									The decision-support framework can be applied to identify what kind of model analyses should be performed to mitigate the risk at a given environmental management site, and, if needed, support the design of data-acquisition campaigns, field experiments, monitoring networks, and remedial systems.
-									Depending on the problem, decision-support framework utilizes various types of model analyses such as parameter estimation, sensitivity analysis, uncertainty quantification, risk assessment, experimental design, cost estimation, data-worth (value of information) analysis, etc.
-								</p>
-								<h5>Relevant computer codes:</h5>
-								<ul class="browser-default">
-									<li>
-										<a href="https://madsjulia.github.io" target="_blank">MADS</a>: Model Analysis &amp; Decision Support
 									</li>
 								</ul>
 							</div>
@@ -1431,6 +1476,7 @@
 					<a href="http://mads.gitlab.io" class="grey-text text-darken-2" target="_blank">GitLab</a>
 					<a href="http://madsjulia.github.io" class="grey-text text-darken-2" target="_blank">GitHub</a>
 					<a href="http://madsc.lanl.gov" class="grey-text text-darken-2" target="_blank">C</a>
+					<a href="http://gitlab.com/monty/mads" class="grey-text text-darken-2" target="_blank">C source</a>
 					<a href="http://madsjulia.lanl.gov" class="grey-text text-darken-2" target="_blank">Julia</a>
 					<a href="http://madspy.lanl.gov" class="grey-text text-darken-2" target="_blank">Python</a>
 					<br />
@@ -1442,13 +1488,13 @@
 					WELLS:
 					<a href="http://wells.lanl.gov" class="grey-text text-darken-2" target="_blank">LANL</a>
 					<a href="http://wells.gitlab.io" class="grey-text text-darken-2" target="_blank">GitLab</a>
-					<a href="https://gitlab.com/monty/wells" class="grey-text text-darken-2" target="_blank">C Gitlab</a>
-					<a href="https://github.com/madsjulia/Wells.jl" class="grey-text text-darken-2" target="_blank">Julia GitHub</a>
+					<a href="https://gitlab.com/monty/wells" class="grey-text text-darken-2" target="_blank">C source</a>
+					<a href="https://github.com/madsjulia/Wells.jl" class="grey-text text-darken-2" target="_blank">Julia source</a>
 					<br />
 					ChroTran:
 					<a href="http://chrotran.lanl.gov" class="grey-text text-darken-2" target="_blank">LANL</a>
 					<a href="http://chrotran.github.io" class="grey-text text-darken-2" target="_blank">GitHub</a>
-					<a href="https://gitlab.com/lanl/chrotran" class="grey-text text-darken-2" target="_blank">Gitlab</a>
+					<a href="https://gitlab.com/lanl/chrotran" class="grey-text text-darken-2" target="_blank">Source</a>
 				</p>
 			</div>
 		</div>
