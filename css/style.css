@@ -29,10 +29,6 @@ a {
 	color: #e65100 !important;
 }
 
-.title-text {
-	color: #e65100 !important;
-}
-
 @media only screen and (min-width: 360px) {
 	.flow-text-small {
 		font-size: 1.1rem;
