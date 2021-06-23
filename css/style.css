@@ -1,6 +1,7 @@
 .icon-block {
 	padding: 0 15px;
 }
+
 .icon-block .material-icons {
 	font-size: inherit;
 }
@@ -11,14 +12,155 @@ header, main, footer {
 
 @media only screen and (max-width : 992px) {
 	header, main, footer {
-	padding-left: 0;
+		padding-left: 0;
 	}
 }
 
 ul.browser-default li {
 	list-style-type: initial;
+	padding-bottom: 20px;
+}
+
+.footer-copyright a {
+	padding-right: 15px;
 }
 
 a {
 	color: #e65100 !important;
+}
+
+.title-text {
+	color: #e65100 !important;
+}
+
+@media only screen and (min-width: 360px) {
+	.flow-text-small {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (min-width: 390px) {
+	.flow-text-small {
+		font-size: 1.124rem;
+	}
+}
+
+@media only screen and (min-width: 420px) {
+	.flow-text-small {
+		font-size: 1.148rem;
+	}
+}
+
+@media only screen and (min-width: 450px) {
+	.flow-text-small {
+		font-size: 1.172rem;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.flow-text-small {
+		font-size: 1.196rem;
+	}
+}
+
+@media only screen and (min-width: 510px) {
+	.flow-text-small {
+		font-size: 1.22rem;
+	}
+}
+
+@media only screen and (min-width: 540px) {
+	.flow-text-small {
+		font-size: 1.244rem;
+	}
+}
+
+@media only screen and (min-width: 570px) {
+	.flow-text-small {
+		font-size: 1.268rem;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.flow-text-small {
+		font-size: 1.292rem;
+	}
+}
+
+@media only screen and (min-width: 630px) {
+	.flow-text-small {
+		font-size: 1.316rem;
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	.flow-text-small {
+		font-size: 1.34rem;
+	}
+}
+
+@media only screen and (min-width: 690px) {
+	.flow-text-small {
+		font-size: 1.364rem;
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	.flow-text-small {
+		font-size: 1.388rem;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	.flow-text-small {
+		font-size: 1.412rem;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	.flow-text-small {
+		font-size: 1.436rem;
+	}
+}
+
+@media only screen and (min-width: 810px) {
+	.flow-text-small {
+		font-size: 1.46rem;
+	}
+}
+
+@media only screen and (min-width: 840px) {
+	.flow-text-small {
+		font-size: 1.484rem;
+	}
+}
+
+@media only screen and (min-width: 870px) {
+	.flow-text-small {
+		font-size: 1.508rem;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.flow-text-small {
+		font-size: 1.532rem;
+	}
+}
+
+@media only screen and (min-width: 930px) {
+	.flow-text-small {
+		font-size: 1.556rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.flow-text-small {
+		font-size: 1.58rem;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.flow-text-small {
+		font-size: 1.1rem;
+	}
 }
