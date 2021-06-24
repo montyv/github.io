@@ -16,7 +16,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
-	<link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css"rel="stylesheet"/>
+	<link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css" rel="stylesheet"/>
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.0.0.js"></script>
@@ -524,8 +524,9 @@
 									</li>
 									<li>
 										Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models, Recent Advances in Machine Learning and Computational Methods for Geoscience, Institute for Mathematics and its Applications, University of Minnesota, 10.13140/RG.2.2.16024.03848, 2018. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/presentations/Vesselinov 2018 Novel Machine Learning Methods for Extraction of Features Characterizing Complex Datasets and Models LA-UR-18-30987.pdf" target="_blank">PDF</a>
+										<br />
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/xPOkeLMJywE?start=139" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</li>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/xPOkeLMJywE?start=139" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									<li>
 										Vesselinov, V.V., Mudunuru. M., Karra, S., O'Malley, D., Alexandrov, Unsupervised Machine Learning based on Nonnegative Matrix/Tensor Factorization, World Congress on Computational Mechanics (WCCM), New York, NY, 2018 (invited)
 									</li>
@@ -617,7 +618,7 @@
 										Vesselinov, V.V., Uncertainties in Transient Capture-Zone Estimates, CMWR 2006 XVI International Conference on Computational Methods in Water Resources, Copenhagen, Denmark, June 18-22, 10.13140/RG.2.2.28869.09446, 2006. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/presentations/vesselinov LA-UR-06-2305 cmwr06 transeint capture zone 060622.pdf" target="_blank">PDF</a>
 									</li>
 								</ul>
-								<p>More presentations are available at <a href="https://www.slideshare.net/VelimirmontyVesselin">SlideShare.net</a>, <a href="https://www.researchgate.net/profile/Velimir_Vesselinov" target="_blank">ResearchGate</a>, and <a href="https://lanl.academia.edu/monty" target="_blank">Academia.edu</a>.</p></p>
+								<p>More presentations are available at <a href="https://www.slideshare.net/VelimirmontyVesselin">SlideShare.net</a>, <a href="https://www.researchgate.net/profile/Velimir_Vesselinov" target="_blank">ResearchGate</a>, and <a href="https://lanl.academia.edu/monty" target="_blank">Academia.edu</a>.</p>
 							</div>
 						</div>
 					</li>
@@ -838,18 +839,19 @@
 								<div style="text-align: left">
 									<img src="logos/nmfk-logo.png" alt="nmfk logo" height="120"/>
 									<span style="float: right">
-									<img src="logos/ntfk-logo.png" alt="ntfk logo" height="120"/>
+										<img src="logos/ntfk-logo.png" alt="ntfk logo" height="120"/>
 									</span>
 								</div>
-
-								<p>
-									Other key methods/tools for ML include:
+								<div>
+									<p>
+										Other key methods/tools for ML include:
+									</p>
 									<ul class="browser-default">
 										<li>
 											<a href="https://github.com/madsjulia/RegAE.jl" target="_blank">RegAE.jl</a>: a novel curring-edge methodology for performing inverse analysis.
 											The main goal of this approach is to provide an efficient and general means of regularizing inverse problems where the parameter fields are high-dimensional and have coherent structures.
 											<a href="https://github.com/madsjulia/RegAE.jl" target="_blank">RegAE.jl</a> is intended to work for any general inverse problem without prior knowledge of the solved physics and how to properly perform the regularization.
-											<a href="https://github.com/madsjulia/RegAE.jl" target="_blank">RegAE.jl</a> leverages a VAE to learn how to regularize these problems based on unconditioned realizations of the high-dimensional parameter fields.
+											<a href="https://github.com/madsjulia/RegAE.jl" target="_blank">RegAE.jl</a> leverages a Variational AutoEncoder (VAE) to learn how to regularize these problems based on unconditioned realizations of the high-dimensional parameter fields.
 											<a href="https://github.com/madsjulia/RegAE.jl" target="_blank">RegAE.jl</a> provides a computationally efficient means of obtaining an optimal solution by (1) easing the regularization process, and (2) reducing the dimensionality of the optimized parameter space.
 											In addition, the application of adjoint methods (via automatic differentiation) during the <a href="https://github.com/madsjulia/RegAE.jl" target="_blank">RegAE.jl</a> inverse analysis further reduces the computational cost.
 										</li>
@@ -860,8 +862,7 @@
 											<a href="https://github.com/SmartTensors/PhysicsInformedML.jl" target="_blank">PhysicsInformedML.jl</a>: Physics-Informed ML subroutines.
 										</li>
 									</ul>
-								</p>
-
+								</div>
 								<h5>Research Papers:</h5>
 								<ul class="browser-default">
 									<li>
@@ -888,9 +889,9 @@
 									<li>
 										Alexandrov, B., Vesselinov, V.V., Blind source separation for groundwater level analysis based on non-negative matrix factorization, Water Resources Research, 10.1002/2013WR015037, 2014. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/papers/Alexandrov & Vesselinov 2014 Blind source separation for groundwater pressure analysis based on nonnegative matrix factorization.pdf">PDF</a>
 									</li>
-									</ul>
-									<h5>Presentations:</h5>
-									<ul class="browser-default">
+								</ul>
+								<h5>Presentations:</h5>
+								<ul class="browser-default">
 									<li>
 										Vesselinov, V.V., Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models, AGU Fall meeting, Washington D.C., 2018. <a href="https://gitlab.com/monty/monty.gitlab.io/raw/master/presentations/Vesselinov 2018 Novel Machine Learning Methods for Extraction of Features Characterizing Datasets and Models LA-UR-18-31366.pdf">PDF</a>
 									</li>
@@ -935,21 +936,21 @@
 								</p>
 								<p>
 									Key tools for data analytics include:
-									<ul class="browser-default">
-										<li>
-											<a href="https://gitlab.com/zem" target="_blank">ZEM</a>: Integrated Framework for Real-Time Data and Model Analyses for Robust Environmental Management Decision Making.
-										</li>
-										<li>
-											<a href="https://github.com/madsjulia" target="_blank">MADS</a> (Model Analysis &amp; Decision Support): a framework with a wide range of data pre- and post-processing capabilities (including visualization and statistical analyses). <a href="https://github.com/madsjulia" target="_blank">MADS</a> can also perform various of data-based analyses.
-										</li>
-										<li>
-											<a href="https://gitlab.com/zem/chipbeta" target="_blank">CHiPBETA</a>: Correcting pressure head for pumping, barometric, & Earth Tide effects for data-analytics and model-diagnostics applications.
-										</li>
-										<li>
-											<a href="https://github.com/madsjulia/Kriging.jl" target="_blank">Kriging.jl</a>: Gaussian process regressions and simulations.
-										</li>
-									</ul>
 								</p>
+								<ul class="browser-default">
+									<li>
+										<a href="https://gitlab.com/zem" target="_blank">ZEM</a>: Integrated Framework for Real-Time Data and Model Analyses for Robust Environmental Management Decision Making.
+									</li>
+									<li>
+										<a href="https://github.com/madsjulia" target="_blank">MADS</a> (Model Analysis &amp; Decision Support): a framework with a wide range of data pre- and post-processing capabilities (including visualization and statistical analyses). <a href="https://github.com/madsjulia" target="_blank">MADS</a> can also perform various of data-based analyses.
+									</li>
+									<li>
+										<a href="https://gitlab.com/zem/chipbeta" target="_blank">CHiPBETA</a>: Correcting pressure head for pumping, barometric, & Earth Tide effects for data-analytics and model-diagnostics applications.
+									</li>
+									<li>
+										<a href="https://github.com/madsjulia/Kriging.jl" target="_blank">Kriging.jl</a>: Gaussian process regressions and simulations.
+									</li>
+								</ul>
 							</div>
 						</div>
 					</li>
@@ -1042,15 +1043,15 @@
 								</p>
 								<p>
 									Other key tools for model diagnostics include:
-									<ul class="browser-default">
-										<li>
-											<a href="https://github.com/madsjulia/AffineInvariantMCMC.jl" target="_blank">AffineInvariantMCMC.jl</a>: Integrated Framework for Real-Time Data and Model Analyses for Robust Environmental Management Decision Making.
-										</li>
-										<li>
-											<a href="https://github.com/madsjulia/BIGUQ.jl" target="_blank">BIGUQ.jl</a>: Bayesian Information Gap Decision Theory (BIG-DT) analysis for Uncertainty Quantification, Experimental Design and Decision Analysis.
-										</li>
-									</ul>
 								</p>
+								<ul class="browser-default">
+									<li>
+										<a href="https://github.com/madsjulia/AffineInvariantMCMC.jl" target="_blank">AffineInvariantMCMC.jl</a>: Integrated Framework for Real-Time Data and Model Analyses for Robust Environmental Management Decision Making.
+									</li>
+									<li>
+										<a href="https://github.com/madsjulia/BIGUQ.jl" target="_blank">BIGUQ.jl</a>: Bayesian Information Gap Decision Theory (BIG-DT) analysis for Uncertainty Quantification, Experimental Design and Decision Analysis.
+									</li>
+								</ul>
 							</div>
 						</div>
 					</li>
@@ -1144,7 +1145,6 @@
 										Decision Analysis and Support
 									</li>
 								</ul>
-
 								<p>
 									<strong>MADS</strong> has been tested to perform HPC simulations on a wide-range multi-processor clusters and cloud parallel environments (Moab, Slurm, etc.).
 								</p>
@@ -1336,7 +1336,9 @@
 						<div class="collapsible-header flow-text orange-text text-darken-4">GeoThermalCloud</div>
 						<div class="collapsible-body flow-text-small">
 							<div class="left-align" style="padding-left: 30px;">
-								<h5><strong>ML4Geo</strong>: Cloud Fusion of Big Data and Multi-Physics Models using Machine Learning for Discovery, Exploration, and Development of Hidden Geothermal Resources</h5>
+								<h5>
+									<strong>ML4Geo</strong>: Cloud Fusion of Big Data and Multi-Physics Models using Machine Learning for Discovery, Exploration, and Development of Hidden Geothermal Resources
+								</h5>
 								<p>
 									<img src="logos/geothemalcloud.png" width=200px alt=""/>
 								</p>
@@ -1580,7 +1582,7 @@
 <footer class="page-footer orange lighten-3">
 	<div id="contact" class="container scrollspy">
 		<div class="row">
-			<div class="col l8 s3">
+			<div class="col l12 s12">
 				<div class="footer-copyright">
 					<div class="container">
 						<a href="mailto:velimir.vesselinov@gmail.com" target="_blank"><span class="teal-text email"><i class="small icon ion-md-mail"></i></span></a>
