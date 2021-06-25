@@ -3,4 +3,5 @@ $(document).ready(function(){
 	$('.materialboxed').materialbox();
 	$('.parallax').parallax();
 	$('.collapsible').collapsible();
+	$('.scrollspy').scrollSpy();
 });
