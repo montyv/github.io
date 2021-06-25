@@ -1887,7 +1887,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   'use strict';
 
   var _defaults = {
-    accordion: true,
+    accordion: false,
     onOpenStart: undefined,
     onOpenEnd: undefined,
     onCloseStart: undefined,
