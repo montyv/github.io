@@ -26,3 +26,5 @@
 	locksverify = false
 [lfs "https://github.com/montyvesselinov/montyvesselinov.github.io.git/info/lfs"]
 	locksverify = false
+[lfs]
+	repositoryformatversion = 0
